@@ -86,7 +86,7 @@ def calculate_resutls(y_test, y_pred):
         hit_rate = 0
     if hit_rate is np.nan:
         hit_rate = 0
-    fpr, tpr, thresholds = roc_curve(obs, pred)
+    fpr, tpr, thresholds = roc_curve(obs, y_pred)
     roc_auc = auc(fpr, tpr)
     
     test_results = {
