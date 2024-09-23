@@ -1,4 +1,4 @@
-# Scaffold Split Overestimate Virtual Screening
+# UMAP-clustering split for rigorous evaluation of AI models for virtual screening on cancer cell lines
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![PyPI version](https://badge.fury.io/py/pypi.svg)](https://badge.fury.io/py/pypi)
