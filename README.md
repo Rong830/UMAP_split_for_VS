@@ -187,4 +187,23 @@ If you use the code or data in this package, please cite:
   journal={arXiv preprint arXiv:2406.00873},
   year={2024}
 }
+
+@article{guo2024umap,
+  title={UMAP-clustering split for rigorous evaluation of AI models for virtual screening on cancer cell lines},
+  author={Guo, Qianrong and Hernandez-Hernandez, Saiveth and Ballester, Pedro J},
+  journal={Journal of Cheminformatics},
+  year={2024}
+}
+
+@conference{guo2024scaffoldsplits,
+    author={Guo, Qianrong and Hernandez-Hernandez, Saiveth and Ballester, Pedro J.},
+    editor={Wand, Michael and Malinovsk{\'a}, Krist{\'i}na and Schmidhuber, J{\"u}rgen and Tetko, Igor V.},
+    title={Scaffold Splits Overestimate Virtual Screening Performance},
+    booktitle={Artificial Neural Networks and Machine Learning -- ICANN 2024},
+    year={2024},
+    publisher={Springer Nature Switzerland},
+    address={Cham},
+    pages={58--72},
+    isbn={978-3-031-72359-9}
+}
 ```
