@@ -6,9 +6,6 @@
 This repo contains all the codes used in the paper: Scaffold splits overestimate virtual screening performance, using traditional machine learning models and deep learning models to illustrate the limitation of using Scaffold Splits in Drug Discovery. This repo can help researchers to reproduce what has been done in the article.
 ![Figure](https://github.com/ScaffoldSplitsOverestimateVS/ScaffoldSplitsOverestimateVS/assets/162518242/2fb2cd9a-5273-4dca-9072-52ac8a12312a)
 
-## Preprint
-The preprint of the paper can be accessed here: [Scaffold Splits Overestimate Virtual Screening Performance](https://github.com/user-attachments/files/16087984/Qianrong_ScaffoldSplitsOverestimateVirtualScreeningPerformance.1.pdf). This provides a detailed overview and supplementary material that supports the conclusions drawn in this study.
-
 ## Introduction to the Splits
 To ensure robust and comprehensive validation of our models, we employed four distinct clustering methodologies for creating 7-fold cross-validation splits.
 
@@ -23,16 +20,14 @@ Each of these clustering methods has been utilized to create distinct sets of fo
 These instructions will guide you through setting up the Conda environment for the project.
 
 ### Prerequisites
-
 Make sure you have Conda installed on your system. If not, you can download and install it from [here](https://www.anaconda.com/download).
 
 ### Clone the Repository
-
 Clone this repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/ScaffoldSplitsOverestimateVS/ScaffoldSplitsOverestimateVS.git
-cd ScaffoldSplitsOverestimateVS
+git clone https://github.com/Rong830/UMAP_split_for_VS.git
+cd UMAP_split_for_VS
 ```
 
 ### Set Up Conda Environment
@@ -45,16 +40,18 @@ conda install --file requirements.txt
 ```
 
 ### Download and Extract the data
-First, download the data [here](https://drive.google.com/file/d/1iEzxPRbq8TYg-1m-ePz6fxt8JkzLgPg-/view?usp=sharing) and move the file `60_cell_lines.tar.gz` to the `data` folder (it should be `./data/60_cell_lines.tar.gz`).
+All the data are available on Zenodo [here](https://zenodo.org/records/14736486)
+
+First, download the data [here](https://zenodo.org/records/14736486/files/60_cell_lines.zip?download=1) and move the file `60_cell_lines.zip` to the `data` folder (it should be `./data/60_cell_lines.zip`).
 Then, extract the drug response data for all 60 cell lines in the `data` folder.
 
 ```bash
 cd data
-tar -xvf 60_cell_lines.tar.gz
+unzip 60_cell_lines.zip
 ```
 
 ## Dataset Structure
-The dataset located at `./data/clustering_id_k7.csv` is prepared for the 7-fold cross-validation using various splitting algorithms. Each row in the dataset represents a unique chemical compound from all 60 different cell line datasets.
+The dataset located at `./data/clustering_id_k7.csv` (can be downloaded [here](https://zenodo.org/records/14736486/files/clustering_id_k7.csv?download=1)) is prepared for the 7-fold cross-validation using various splitting algorithms. Each row in the dataset represents a unique chemical compound from all 60 different cell line datasets.
 
 - `NSC`: Unique identifier for the compound.
 - `SMILES`: SMILES representation of the chemical compound.
