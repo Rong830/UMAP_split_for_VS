@@ -73,6 +73,11 @@ Run the GEM models:
 ```bash
 bash run_gem.sh
 ```
+
+Run the Transformer-CNN models:
+```bash
+bash run_trans.sh
+```
 Modified the arguments to use different splitting methods (including scaffold split and UMAP split); or specified the cell line you want to run the model; or if you want to do hyperparamters tunning.
 
 ## Tables
@@ -172,7 +177,11 @@ Please adhere to this project's `code of conduct`.
 
 ## Acknowledgments
 
-Parts of this project are developed based on the GEM model from the [PaddleHelix repository](https://github.com/PaddlePaddle/PaddleHelix/tree/dev/apps/pretrained_compound/ChemRL/GEM). We appreciate the PaddleHelix team's work and their contributions to the community.
+Parts of this project are developed based on the GEM [^3] model from the [PaddleHelix repository](https://github.com/PaddlePaddle/PaddleHelix/tree/dev/apps/pretrained_compound/ChemRL/GEM) and the Transformer-CNN [^4] model from the [transformer-cnn repository](https://github.com/bigchem/transformer-cnn). We appreciate the PaddleHelix [@PaddlePaddle](https://www.github.com/PaddlePaddle) and [@bigchem](https://www.github.com/bigchem) teams' work and their contributions to the community.
+
+[^3]: Fang, X., Liu, L., Lei, J. et al. Geometry-enhanced molecular representation learning for property prediction. Nat Mach Intell 4, 127–134 (2022). [https://doi.org/10.1038/s42256-021-00438-4](https://doi.org/10.1038/s42256-021-00438-4).
+
+[^4]: Karpov, Pavel, et al. “Transformer-CNN: Swiss Knife for QSAR Modeling and Interpretation.” Journal of Cheminformatics, vol. 12, no. 1, Mar. 2020. Crossref, [ttps://doi.org/10.1186/s13321-020-00423-w](ttps://doi.org/10.1186/s13321-020-00423-w).
 
 ## Citation
 If you use the code or data in this package, please cite:
