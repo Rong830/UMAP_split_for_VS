@@ -3,8 +3,11 @@
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![PyPI version](https://badge.fury.io/py/pypi.svg)](https://badge.fury.io/py/pypi)
 
-This repo contains all the codes used in the paper: Scaffold splits overestimate virtual screening performance, using traditional machine learning models and deep learning models to illustrate the limitation of using Scaffold Splits in Drug Discovery. This repo can help researchers to reproduce what has been done in the article.
+This repo contains all the codes used in the paper: UMAP-based clustering split for rigorous evaluation of AI models for virtual screening on cancer cell lines, using traditional machine learning models and deep learning models to illustrate the limitation of using Scaffold Splits in Drug Discovery. This repo can help researchers to reproduce what has been done in the article.
 ![Figure](https://github.com/ScaffoldSplitsOverestimateVS/ScaffoldSplitsOverestimateVS/assets/162518242/2fb2cd9a-5273-4dca-9072-52ac8a12312a)
+
+## ChEMBL Shared Targets Correlation
+Random and scaffold splits both risk overestimating virtual screening (VS) performance. While random splits mix structurally similar compounds across folds, scaffold splits—despite excluding shared Murcko scaffolds—can still place nearly identical molecules in different folds. For example, Vorinostat and Pyroxamide have different scaffolds but show 0.938 Pearson correlation in bioactivity across shared targets in ChEMBL v33. Such cases inflate performance by allowing models to exploit hidden similarities. For realistic evaluation, we recommend UMAP-based clustering, which better captures global structural diversity and distributional shifts in real-world VS tasks.
 
 ## Introduction to the Splits
 To ensure robust and comprehensive validation of our models, we employed four distinct clustering methodologies for creating 7-fold cross-validation splits.
